@@ -1,0 +1,221 @@
+@import '_vars.scss';
+@import '_mixin.scss';
+@media (max-width: 890px) {
+    .container {
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+    .header {
+        &__container {
+            .header__wrap-top {
+                .nav {
+                    display: none;
+                }  
+            }
+            .header__wrap-bottom {
+                display: block;
+                padding: 12px 27px;
+                .burger-open {
+                    display: none;
+                }
+            }
+        }
+    }
+    .hero {
+        &__container {       
+            .hero__item-left {
+                .hashtag {
+                    top: 18px;
+                }
+                .card__content {
+
+                    margin: 0 28px 30px 28px;
+        
+                    .card__title {
+                        margin-bottom: 15px;
+                    }
+        
+                    .card__text {
+                        line-height: 90%;
+                        margin-bottom: 24px;
+                    }
+
+                    .card__btn {
+                        margin-left: 2px;
+                    }
+                }
+            }
+        
+            .hero__title {
+                margin-bottom: 17px;
+                font-size: 22px;
+            }
+        
+            .grid {
+                grid-template-rows: repeat(1, 228px);
+                grid-auto-rows: 133px;
+        
+            }
+        }
+    }
+    .about {   
+        &__container {
+            padding-bottom: 62px;
+            .about__wrap {
+                .about__item {
+                    .about__img {
+                        height: 566px;
+                        background-image: url(../img/about768.jpg);
+                    }
+                    .about__form {
+                        .error-text {
+                            .about__input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .project {
+        &__container {
+            .grid {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: 300px 305px 307px 300px;
+                row-gap: 25px;
+                &__item {
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    .card {
+                        &__text {
+                            -webkit-line-clamp: 2;
+                        }
+                        &__img {
+                            margin-bottom: 19px;
+                        }
+                        &__title {
+                            margin-bottom: 7px;
+                        }
+                    }
+                } 
+    
+                &__item1 {
+                    grid-column: span 2;
+                    order: -7;
+                    .card {
+                        &__text {
+                            -webkit-line-clamp: 3;
+                        }
+                    }
+                }
+                &__item2 {
+                    grid-column: span 2;
+                    order: -6;
+                    .card {
+                        &__text {
+                            -webkit-line-clamp: 3;
+                        }
+                    }
+                }
+                &__item3 {
+                    grid-column: span 2;
+                    order: -5;
+                    .card__img {
+                        background-image: url(../img/project3-1920.jpg);
+                    }
+                }
+                &__item4 {
+                    grid-column: span 6;
+                    order: -4;
+                    margin-bottom: 5px;
+                    .card {
+                        padding: 54px 0 30px 30px; 
+                        &__calendar {
+                            top: 29px;
+                        }
+                        &__text {
+                            -webkit-line-clamp: 3;
+                        }
+                    }
+                }
+                &__item5 {
+                    grid-column: span 6;
+                    .card {
+                        padding: 54px 0 30px 30px;
+                        &__calendar {
+                            top: 28px;
+                        }
+                        &__title {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+                &__item6 {
+                    order: -3;
+                    grid-column: span 3;
+                    .card {
+                        &__text {
+                            -webkit-line-clamp: 3;
+                        }
+                    }
+                }
+                &__item7 {
+                    grid-column: span 3;
+                    order: -2;
+                    .card {
+                        &__img {
+                        }
+                        &__text {
+                            -webkit-line-clamp: 3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contacts {
+        margin-bottom: 69px;
+        &__container {
+            .contacts__title {
+                margin-bottom: 23px;
+            }
+    
+           .grid {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 460px;
+            grid-auto-rows: 445px;
+            grid-gap: 24px;
+                .contacts__map {
+                    grid-column: span 6;
+                    .map__info {
+                        height: 34%;
+                        .map__info-content {
+                            margin: 25px 30px 24px 30px;
+                            max-width: 436px;
+                            .map__address {   
+                                .map__tel {
+                                    position: static;
+                                }
+                            }
+                        }
+                    }
+                }
+                .contacts__form {
+                    grid-column: span 4;
+                    .contacts__text {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        } 
+    }
+    .footer {
+        &__container {
+            .footer__center {
+                display: none;
+            }
+        }
+    }
+}

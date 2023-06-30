@@ -1,0 +1,225 @@
+@import '_vars.scss';
+@import '_mixin.scss';
+
+@media (max-width: 1320px ) {
+    .container {
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+    .header {
+        margin-bottom: 34px;
+        &__container {
+            .header__wrap-top {
+                padding-top: 26px;
+                padding-bottom: 25px;
+                .header__logo {
+                    width: 166px;
+                }
+                .nav {
+                    margin-right: 50px;
+                    
+                    .nav__list {
+                        gap: 33px; 
+                    }
+                }  
+            }
+        }
+    }
+    .hero {
+        &__container {
+            .hero__item {
+                width: 50%;
+            }
+        
+            .hero__item-left {
+                .card__content {
+                    margin: 0 30px 30px 30px;
+
+                    .card__title {
+                        margin-bottom: 11px;
+                    }
+        
+                    .card__text {
+                        font-size: 34px;
+                        line-height: 100%;
+                        margin-bottom: 22px;
+                    }
+                }
+            }
+        
+            .hero__title {
+                margin-bottom: 25px;
+                line-height: 104%;
+            }
+        
+            .grid {
+                grid-template-rows: repeat(1, 332px);
+                grid-auto-rows: 186px;
+        
+            }
+        }
+    }
+    .about {   
+        &__container {
+            padding-bottom: 82px;
+            .about__title {
+                margin-bottom: 5px;
+            }
+            .about__wrap {
+                .about__item {
+                    .about__img {
+                        height: 329px;
+                    }
+                    .about__form {
+                        margin-top: 14px;
+                        display: block;
+    
+                        .error-text {
+                            width: 100%;
+                            .about__input {
+                                width: 73.4%;
+                                height: 50px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .project {
+        margin-bottom: 69px;
+        &__container {
+            .grid {
+                grid-template-columns: repeat(8, 1fr);
+                grid-template-rows: repeat(1, 286px);
+                grid-auto-rows: 307px;
+                row-gap: 24px;
+                &__item {
+                    .card {
+                        &__text {
+                            -webkit-line-clamp: 2;
+                        }
+                        &__img {
+                            margin-bottom: 19px;
+                        }
+                    }
+                } 
+    
+                &__item1 {
+                    grid-column: span 2;
+                    order: -7;
+                }
+                &__item2 {
+                    grid-column: span 2;
+                    order: -6;
+                }
+                &__item3 {
+                    grid-column: span 4;
+                    order: -5;
+                }
+                &__item4 {
+                    grid-column: span 5;
+                    order: -4;
+                    .card {
+                        padding: 54px 0 36px 30px; 
+                        &__calendar {
+                            top: 29px;
+                            left: 31px;
+                        }
+                        &__text {
+                            -webkit-line-clamp: 3;
+                        }
+                    }
+                }
+                &__item5 {
+                    grid-column: span 5;
+                    .card {
+                        padding: 54px 0 29px 30px;
+                        &__calendar {
+                            top: 29px;
+                            left: 31px;
+                        }
+                    }
+                }
+                &__item6 {
+                    order: -3;
+                    grid-column: span 3;
+                    .card {
+                        &__text {
+                            -webkit-line-clamp: 3;
+                        }
+                    }
+                }
+                &__item7 {
+                    grid-column: span 3;
+                    order: -2;
+                    .card {
+                        &__text {
+                            -webkit-line-clamp: 3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contacts {
+        margin-bottom: 73px;
+        &__container {
+            .contacts__title {
+                margin-bottom: 19px;
+            }
+    
+           .grid {
+            grid-template-columns: repeat(8, 1fr);
+                .contacts__map {
+                    grid-column: span 5;
+                    .map__info {
+                        width: 100%;
+                        height: 33%;
+                        bottom: 0; 
+                        justify-content: start;
+                        .map__btn {
+                            top: 20px;
+                            right: 20px;
+                        }
+                        .map__info-content {
+                            margin: 15px 30px 5px 30px;
+                            .map__address {   
+                                .map__tel {
+                                    position: absolute;
+                                    bottom: 18px;
+                                    left: 178px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .contacts__form {
+                    grid-column: span 3;
+                    flex-direction: column;
+                }
+            }
+        } 
+    }
+    .footer {
+        background-color: $black;
+        &__container {
+            padding-top: 27px;
+            .footer__left {
+                margin-right: 65px;
+                img {
+                    width: 166px;
+                }
+            }
+            .footer__center {
+                margin-right: 0px;
+            }
+            .footer__right {
+                .footer__text {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+}
