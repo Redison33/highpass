@@ -1093,7 +1093,7 @@ body {
   }
   .about__container .about__wrap .about__item .about__img {
     height: 566px;
-    background-image: url(../img/about768.jpg);
+    background-image: url(img/about768.jpg);
   }
   .about__container .about__wrap .about__item .about__form .error-text .about__input {
     width: 100%;
@@ -1136,7 +1136,7 @@ body {
     order: -5;
   }
   .project__container .grid__item3 .card__img {
-    background-image: url(../img/project3-1920.jpg);
+    background-image: url(img/project3-1920.jpg);
   }
   .project__container .grid__item4 {
     grid-column: span 6;
